@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1509317823875931');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1509317823875931&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>𝗖𝗔𝗣𝗧𝗔𝗜𝗡 𝗠𝗜𝗟𝗟𝗘𝗥 ™ 🏏</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  body {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+  }
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px #00f2ff; }
+    50% { box-shadow: 0 0 25px #00f2ff, 0 0 40px #22c55e; }
+    100% { box-shadow: 0 0 10px #00f2ff; }
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+
+  .cta-btn {
+    animation: glow 2s infinite, pulse 2s infinite;
+    transition: 0.3s;
+  }
+
+  .cta-btn:hover {
+    transform: scale(1.15);
+  }
+</style>
+</head>
+
+<body class="text-white">
+
+<div class="min-h-screen flex items-center justify-center px-4">
+
+  <div class="bg-gradient-to-br from-blue-900/40 to-black/80 backdrop-blur-lg p-6 rounded-2xl text-center max-w-md w-full border border-blue-500 shadow-xl">
+
+    <!-- Logo -->
+    <img src="logo.jpg" class="w-24 h-24 mx-auto rounded-full border-4 border-blue-500 shadow-lg">
+
+    <!-- Heading -->
+    <h1 class="text-3xl font-extrabold mt-4 text-yellow-400">
+      𝗖𝗔𝗣𝗧𝗔𝗜𝗡 𝗠𝗜𝗟𝗟𝗘𝗥 ™ 🏏
+    </h1>
+
+    <p class="mt-2 text-lg text-gray-300">
+      🏏 Daily Match Analysis & Tips
+    </p>
+
+    <!-- Countdown -->
+    <div class="mt-4 text-lg font-semibold">
+      <span class="text-red-500">⏳ Hurry Up</span>
+      <span id="countdown" class="text-2xl text-yellow-400 mx-2"></span>
+      <span class="text-red-500">Seconds Left</span>
+    </div>
+
+    <!-- Stats -->
+    <div class="mt-4 bg-black/50 p-3 rounded-lg border border-green-500">
+      <p class="text-green-400 font-bold">📊 Recent IPL Update</p>
+      <p class="text-sm mt-1">
+        IPL Toss • Match Analysis • Smart Predictions
+      </p>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="mt-6  grid place-items-center">
+      <a href="https://t.me/+_RpEZf8Zo0hkMTFl" class="">
+        <button class=" border border-white cta-btn bg-gradient-to-r from-blue-500 flex place-items-center place-content-center gap-4 to-green-500 px-8 py-4 rounded-xl text-lg font-bold text-white">
+          <img src="telegram.jpg" class="w-8 h-8 rounded-full" alt=""> <h1 class="font-serif"> JOIN TELEGRAM NOW</h1>
+        </button>
+      </a>
+    </div>
+
+    <!-- Footer Note -->
+    <p class="mt-4 text-xs text-gray-400">
+      ⚡ Join now & stay updated with IPL insights
+    </p>
+
+  </div>
+
+</div>
+
+<script>
+let timeLeft = 30;
+const countdownElement = document.getElementById('countdown');
+
+setInterval(() => {
+  countdownElement.textContent = timeLeft;
+  timeLeft--;
+
+  if (timeLeft < 0) {
+    timeLeft = 30;
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
